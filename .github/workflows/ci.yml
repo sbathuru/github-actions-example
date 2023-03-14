@@ -27,7 +27,7 @@ jobs:
       - name: Build with Gradle
         run: |
           ./gradlew build
-          ls
+          ls -a
           pwd
 
       - name: Build and Push Docker Image
