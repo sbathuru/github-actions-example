@@ -10,3 +10,6 @@
 
     docker tag java-app demo-app:java-1.0
     
+
+
+https://github.com/DeekshithSN/CICD_Java_gradle_application/tree/main/kubernetes/myapp
