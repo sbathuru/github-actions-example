@@ -30,7 +30,7 @@ jobs:
           path: ./build/libs/java-app-1.0-SNAPSHOT.jar
 
       - name: Build and Push Docker Image
-        uses: mr-smithers-excellent/docker-build-push@v4
+        uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: sbathuru/github-actions-example
           registry: docker.io
@@ -39,7 +39,7 @@ jobs:
 
       - name: Send email
         if: always()
-        uses: dawidd6/action-send-mail@v2
+        uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 465
