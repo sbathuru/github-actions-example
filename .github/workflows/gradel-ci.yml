@@ -31,8 +31,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: java-app-1.0-SNAPSHOT.jar
-          path: ./build/libs/
+          name: java-artifact
+          path: ./build/libs/java-app-1.0-SNAPSHOT.jar
 
       - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v4
