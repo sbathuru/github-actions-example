@@ -18,3 +18,13 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
+
+      - name: Build with Gradle
+        run: |
+          ./gradlew build
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: java-artifact
+          path: ./build/libs/java-app-1.0-SNAPSHOT.jar
